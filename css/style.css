@@ -1,0 +1,99 @@
+body{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.808) 0 100% ) , url("/img/overflowing-bookcases.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.Logo{
+    border-bottom: 2px dotted rgb(110, 109, 109);
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 255, 255);
+   
+}
+
+h3{
+    color: rgb(250, 174, 186);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label{
+    font-size: 20px;
+    color: rgb(242, 242, 247);
+}
+
+.visited{
+    text-decoration: none !important;
+}
+
+.overlay .textbox {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 70px 35px 20px;
+    border-radius: 5px;
+    width: 500px;
+  }
+  .overlay .textbox .colers {
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0.689);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 30px;
+  }
+  .overlay .textbox .colers::after {
+    content: "";
+    position: fixed;
+    background-color: rgba(255, 166, 0, 0.644);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 30px;
+    left: 65px;
+  }
+  .overlay .textbox .colers::before {
+    content: "";
+    position: fixed;
+    background-color: rgba(0, 128, 0, 0.635);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 30px;
+    left: 94px;
+  }
+  .overlay .over {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .overlay .textbox p:first-of-type {
+    font-weight: 600;
+    font-size: 21px;
+  }
+  .overlay .textbox p i {
+    color: #bb4120;
+    margin-right: 4px;
+  }
+  .overlay .textbox p:nth-of-type(2),
+  .overlay .textbox p:nth-of-type(3) {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+  .close {
+    right: 15px;
+    top: 18px;
+    font-size: 20px;
+  }
